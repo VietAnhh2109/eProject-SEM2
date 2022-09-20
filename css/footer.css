@@ -540,6 +540,9 @@
 }
 
 /* Seller */ 
+.seller {
+    margin-top: 6%;
+}
 .seller__header {
     text-align: center;
     font-size: 3rem;
