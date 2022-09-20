@@ -1,35 +1,3 @@
-/******************************************************************
-  Template Name: codelean
-  Description: codelean eCommerce HTML Template
-  Author: CodeLean
-  Author URI: https://CodeLean.vn/
-  Version: 1.0
-  Created: CodeLean
-******************************************************************/
-
-/*------------------------------------------------------------------
-[Table of contents]
-
-1.  Template default CSS
-	1.1	Variables
-	1.2	Mixins
-	1.3	Flexbox
-	1.4	Reset
-2.  Helper Css
-3.  Header Section
-4.  Hero Section
-5.  Banner Section
-6.  Deal Of The Week
-7.  Latest Blog
-8.  Logo Carousel
-9.  Contact
-10.  Footer
-
--------------------------------------------------------------------*/
-
-/*----------------------------------------*/
-/* Template default CSS
-/*----------------------------------------*/
 
 html,
 body {
@@ -1731,9 +1699,23 @@ ol {
 	font-weight: 700;
 	margin-bottom: 26px;
 }
+.filter-widget .widget-title {
+	background-color: #75b239;
+	font-weight: 500;
+	line-height: 1.4;
+	font-size: 18px;
+	padding: 14px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 15px;
 
+
+}
 .filter-widget .filter-catagories li {
+	border: 1px solid rgba(117, 178, 57, 0.15);
 	list-style: none;
+	padding: 2px 15px;
+	background-color: rgb(248,251,245);
 }
 
 .filter-widget .filter-catagories li a {
@@ -1741,6 +1723,10 @@ ol {
 	color: #636363;
 	font-size: 16px;
 	line-height: 39px;
+}
+.filter-widget .filter-catagories li a:hover {
+	padding-left: 10px;
+	transition: all 0.4s;
 }
 
 .filter-widget .fw-brand-check .bc-item {
