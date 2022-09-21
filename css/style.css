@@ -1141,10 +1141,10 @@ ol {
 	min-width: 100%;
 }
 
-.product-item .pi-pic .sale {
+.product-item .pi-pic .sale,
+.product-item .pi-pic .new {
 	color: #ffffff;
 	font-size: 10px;
-	background: #76BC42;
 	position: absolute;
 	left: 0;
 	top: 20px;
@@ -1153,7 +1153,10 @@ ol {
 }
 
 .product-item .pi-pic .sale.pp-sale {
-	background: #75b239;
+	background: #F0503F;
+}
+.product-item .pi-pic .new.pp-new {
+	background: #D7E34F;
 }
 
 .product-item .pi-pic .icon {
@@ -1204,14 +1207,14 @@ ol {
 	padding-top: 26px;
 }
 
-.product-item .pi-text .catagory-name {
+/* .product-item .pi-text .catagory-name {
 	font-size: 10px;
 	color: #b2b2b2;
 	font-weight: 700;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	margin-bottom: 10px;
-}
+} */
 
 .product-item .pi-text a {
 	display: block;
@@ -1837,16 +1840,22 @@ ol {
 }
 
 .filter-widget .filter-btn {
-	font-size: 14px;
-	color: #ffffff;
-	font-weight: 700;
-	background: #75b239;
+	font-size: 15px;
+	color: #252525;
+	font-weight: 500;
+	background: #fff;
 	padding: 7px 20px 5px;
 	border-radius: 2px;
 	display: inline-block;
 	text-transform: uppercase;
+	border: 1px solid #e1e1e1;
+	
 }
-
+.filter-widget .filter-btn:hover {
+	color: #fff;
+	background-color: #75b239;
+	transition: all 0.3s;
+}
 .filter-widget .fw-color-choose .cs-item {
 	width: 50%;
 	float: left;
@@ -1938,6 +1947,48 @@ ol {
 	margin-right: 5px;
 	margin-bottom: 9px;
 	border-radius: 2px;
+}
+.filter-widget .fw-tags a:hover {
+	color: #fff;
+	background-color: #75b239;
+	transition: all 0.3s;
+}
+
+
+/* Best Products */
+.filter-widget .product-list-widget {
+	list-style: none;
+
+}
+.filter-widget .product-list-widget li {
+	width: 100%;
+	display: table;
+	padding: 4px 0px;
+}
+.filter-widget .product-list-widget li img {
+	width: 80px;
+    height: auto;
+    float: left;
+    margin-right: 18px;
+    margin-left: -8px;
+}
+.filter-widget .product-list-widget .product-title {
+	color: #444;
+	font-size: 15px;
+	font-weight: 500;
+	display: table;
+	padding: 10px 0px;
+
+}
+.filter-widget .product-list-widget .product-title:hover {
+	color: #75b239;
+	transition: all 0.3s;
+}
+.filter-widget .product-list-widget .product-price {
+	color: #75b239;
+	font-size: 14px;
+	font-weight: 500;
+	margin-top: 12px;
 }
 
 .checkmark:after {
