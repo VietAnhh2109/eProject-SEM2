@@ -540,6 +540,9 @@
 }
 
 /* Seller */ 
+.seller {
+    margin-top: 6%;
+}
 .seller__header {
     text-align: center;
     font-size: 3rem;
@@ -715,7 +718,6 @@
 
 .poster-box__img {
     width: 100%;
-    margin-bottom: 12px;
 }
 
 .poster-box__img:hover {

@@ -1121,8 +1121,17 @@ ol {
 
 .product-item {
 	margin-bottom: 26px;
+	
 }
 
+.product-item-border {
+	border: 1px solid #e1e1e1;
+	border-radius: 3px;
+}
+.product-item:hover .pi-pic:hover {
+	opacity: 0.8;
+	
+}
 .product-item:hover .pi-pic .icon {
 	top: 15px;
 	opacity: 1;
@@ -1207,14 +1216,6 @@ ol {
 	padding-top: 26px;
 }
 
-/* .product-item .pi-text .catagory-name {
-	font-size: 10px;
-	color: #b2b2b2;
-	font-weight: 700;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-} */
 
 .product-item .pi-text a {
 	display: block;
@@ -2102,7 +2103,7 @@ ol {
 
 .product-shop.page-details {
 	padding-bottom: 60px;
-}
+} 
 
 .product-pic-zoom {
 	margin-bottom: 10px;
@@ -2112,6 +2113,7 @@ ol {
 
 .product-pic-zoom img {
 	min-width: 100%;
+	border: 1px solid #e1e1e1;
 }
 
 .product-pic-zoom .zoom-icon {
@@ -2130,7 +2132,9 @@ ol {
 	border-radius: 50%;
 	line-height: 37px;
 }
-
+.product-thumbs img {
+	border: 1px solid #e1e1e1;
+}
 .product-thumbs .pt {
 	cursor: pointer;
 	position: relative;
@@ -2380,14 +2384,11 @@ ol {
 	overflow: hidden;
 }
 
-.product-details .pd-share .p-code {
-	font-size: 16px;
-	color: #252525;
-	float: left;
-}
 
 .product-details .pd-share .pd-social {
-	float: right;
+	color: #252525;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .product-details .pd-share .pd-social a {
@@ -2694,8 +2695,8 @@ ol {
 
 .cart-table table tr th {
 	font-size: 16px;
-	color: #252525;
-	font-weight: 700;
+	color: #75b239;
+	font-weight: 800;
 	border-bottom: 1px solid #ebebeb;
 	text-align: center;
 	padding: 18px 0 19px;
@@ -2811,19 +2812,20 @@ ol {
 }
 
 .cart-buttons .up-cart {
-	color: #252525;
-	background: #f3f3f3;
-	border: 2px solid #ebebeb;
+	color: #f3f3f3;
+	background: #75b239;
+	border: 2px solid #75b239;
 	padding: 12px 20px 12px 20px;
 }
 
 .discount-coupon {
 	margin-bottom: 30px;
+
 }
 
 .discount-coupon h6 {
-	color: #232530;
-	font-weight: 700;
+	color: #75b239;
+	font-weight: 750;
 	text-transform: uppercase;
 	margin-bottom: 16px;
 }
@@ -2845,7 +2847,7 @@ ol {
 	position: absolute;
 	right: 0;
 	top: 0;
-	color: #252525;
+	color: #75b239;
 	background: transparent;
 	border: 1px solid transparent;
 	padding: 13px 25px 10px 35px;
@@ -2864,12 +2866,12 @@ ol {
 	list-style: none;
 	font-size: 16px;
 	font-weight: 700;
-	color: #252525;
 	text-transform: uppercase;
 	overflow: hidden;
 }
 
 .proceed-checkout ul li.subtotal {
+	color: #252525;
 	font-weight: 400;
 	text-transform: capitalize;
 	border-bottom: 1px solid #ffffff;
@@ -2882,9 +2884,6 @@ ol {
 
 .proceed-checkout ul li.cart-total {
 	padding-top: 10px;
-}
-
-.proceed-checkout ul li.cart-total span {
 	color: #75b239;
 }
 
@@ -2896,7 +2895,7 @@ ol {
 	font-size: 14px;
 	font-weight: 700;
 	color: #ffffff;
-	background: #252525;
+	background: #75b239;
 	text-transform: uppercase;
 	padding: 15px 25px 14px 25px;
 	display: block;
@@ -2918,21 +2917,26 @@ ol {
 
 .checkout-content .content-btn,
 .checkout-content input {
-	color: #252525;
+	color: #fff;
 	font-size: 16px;
 	border: 2px solid #ebebeb;
 	padding: 14px 20px;
-	background: #f3f3f3;
+	background: #75b239;
 	text-align: center;
 	display: block;
 }
 
 .checkout-content input {
 	height: 56px !important;
+	
+}
+.checkout-content input::placeholder {
+	color: #fff;
+	opacity: 0.8;
 }
 
 .checkout-form h4 {
-	color: #252525;
+	color: #75b239;
 	font-weight: 700;
 	margin-bottom: 30px;
 }
@@ -3101,8 +3105,8 @@ ol {
 
 .checkout-form .place-order .order-total .order-btn .place-btn {
 	padding: 13px 40px 11px;
-	background: #000000;
-	border-color: #000000;
+	background: #75b239;
+	border-color: #75b239;
 }
 
 /*---------------------
@@ -3747,7 +3751,7 @@ ol {
 
 .faq-accordin .card .card-heading {
 	font-size: 22px;
-	color: #252525;
+	color: #75b239;
 	font-weight: 700;
 	cursor: pointer;
 }
@@ -3772,7 +3776,7 @@ ol {
 	content: "";
 	font-family: "FontAwesome";
 	font-size: 14px;
-	color: #404040;
+	color: #75b239;
 	height: 25px;
 	width: 25px;
 	text-align: center;
@@ -3805,7 +3809,7 @@ ol {
 
 .register-form h2,
 .login-form h2 {
-	color: #252525;
+	color: #75b239;
 	font-weight: 700;
 	text-align: center;
 	margin-bottom: 35px;
@@ -3850,7 +3854,7 @@ ol {
 
 .register-form .switch-login .or-login,
 .login-form .switch-login .or-login {
-	color: #252525;
+	color: #75b239;
 	font-size: 14px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -3864,7 +3868,7 @@ ol {
 	bottom: 0;
 	height: 2px;
 	width: 100%;
-	background: #9f9f9f;
+	background: #75b239;
 	content: "";
 }
 
@@ -4212,6 +4216,7 @@ ol {
 	}
 	.cart-table table tr th {
 		font-size: 12px;
+
 	}
 	.hero-items .single-hero-items {
 		padding: 110px 25px 80px;
