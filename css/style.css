@@ -1,35 +1,3 @@
-/******************************************************************
-  Template Name: codelean
-  Description: codelean eCommerce HTML Template
-  Author: CodeLean
-  Author URI: https://CodeLean.vn/
-  Version: 1.0
-  Created: CodeLean
-******************************************************************/
-
-/*------------------------------------------------------------------
-[Table of contents]
-
-1.  Template default CSS
-	1.1	Variables
-	1.2	Mixins
-	1.3	Flexbox
-	1.4	Reset
-2.  Helper Css
-3.  Header Section
-4.  Hero Section
-5.  Banner Section
-6.  Deal Of The Week
-7.  Latest Blog
-8.  Logo Carousel
-9.  Contact
-10.  Footer
-
--------------------------------------------------------------------*/
-
-/*----------------------------------------*/
-/* Template default CSS
-/*----------------------------------------*/
 
 html,
 body {
@@ -1153,8 +1121,17 @@ ol {
 
 .product-item {
 	margin-bottom: 26px;
+	
 }
 
+.product-item-border {
+	border: 1px solid #e1e1e1;
+	border-radius: 3px;
+}
+.product-item:hover .pi-pic:hover {
+	opacity: 0.8;
+	
+}
 .product-item:hover .pi-pic .icon {
 	top: 15px;
 	opacity: 1;
@@ -1173,10 +1150,10 @@ ol {
 	min-width: 100%;
 }
 
-.product-item .pi-pic .sale {
+.product-item .pi-pic .sale,
+.product-item .pi-pic .new {
 	color: #ffffff;
 	font-size: 10px;
-	background: #76BC42;
 	position: absolute;
 	left: 0;
 	top: 20px;
@@ -1185,7 +1162,10 @@ ol {
 }
 
 .product-item .pi-pic .sale.pp-sale {
-	background: #75b239;
+	background: #F0503F;
+}
+.product-item .pi-pic .new.pp-new {
+	background: #D7E34F;
 }
 
 .product-item .pi-pic .icon {
@@ -1236,14 +1216,6 @@ ol {
 	padding-top: 26px;
 }
 
-.product-item .pi-text .catagory-name {
-	font-size: 10px;
-	color: #b2b2b2;
-	font-weight: 700;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-}
 
 .product-item .pi-text a {
 	display: block;
@@ -1731,9 +1703,23 @@ ol {
 	font-weight: 700;
 	margin-bottom: 26px;
 }
+.filter-widget .widget-title {
+	background-color: #75b239;
+	font-weight: 500;
+	line-height: 1.4;
+	font-size: 18px;
+	padding: 14px;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 15px;
 
+
+}
 .filter-widget .filter-catagories li {
+	border: 1px solid rgba(117, 178, 57, 0.15);
 	list-style: none;
+	padding: 2px 15px;
+	background-color: rgb(248,251,245);
 }
 
 .filter-widget .filter-catagories li a {
@@ -1741,6 +1727,10 @@ ol {
 	color: #636363;
 	font-size: 16px;
 	line-height: 39px;
+}
+.filter-widget .filter-catagories li a:hover {
+	padding-left: 10px;
+	transition: all 0.4s;
 }
 
 .filter-widget .fw-brand-check .bc-item {
@@ -1851,16 +1841,22 @@ ol {
 }
 
 .filter-widget .filter-btn {
-	font-size: 14px;
-	color: #ffffff;
-	font-weight: 700;
-	background: #75b239;
+	font-size: 15px;
+	color: #252525;
+	font-weight: 500;
+	background: #fff;
 	padding: 7px 20px 5px;
 	border-radius: 2px;
 	display: inline-block;
 	text-transform: uppercase;
+	border: 1px solid #e1e1e1;
+	
 }
-
+.filter-widget .filter-btn:hover {
+	color: #fff;
+	background-color: #75b239;
+	transition: all 0.3s;
+}
 .filter-widget .fw-color-choose .cs-item {
 	width: 50%;
 	float: left;
@@ -1952,6 +1948,48 @@ ol {
 	margin-right: 5px;
 	margin-bottom: 9px;
 	border-radius: 2px;
+}
+.filter-widget .fw-tags a:hover {
+	color: #fff;
+	background-color: #75b239;
+	transition: all 0.3s;
+}
+
+
+/* Best Products */
+.filter-widget .product-list-widget {
+	list-style: none;
+
+}
+.filter-widget .product-list-widget li {
+	width: 100%;
+	display: table;
+	padding: 4px 0px;
+}
+.filter-widget .product-list-widget li img {
+	width: 80px;
+    height: auto;
+    float: left;
+    margin-right: 18px;
+    margin-left: -8px;
+}
+.filter-widget .product-list-widget .product-title {
+	color: #444;
+	font-size: 15px;
+	font-weight: 500;
+	display: table;
+	padding: 10px 0px;
+
+}
+.filter-widget .product-list-widget .product-title:hover {
+	color: #75b239;
+	transition: all 0.3s;
+}
+.filter-widget .product-list-widget .product-price {
+	color: #75b239;
+	font-size: 14px;
+	font-weight: 500;
+	margin-top: 12px;
 }
 
 .checkmark:after {
@@ -2065,7 +2103,7 @@ ol {
 
 .product-shop.page-details {
 	padding-bottom: 60px;
-}
+} 
 
 .product-pic-zoom {
 	margin-bottom: 10px;
@@ -2075,6 +2113,7 @@ ol {
 
 .product-pic-zoom img {
 	min-width: 100%;
+	border: 1px solid #e1e1e1;
 }
 
 .product-pic-zoom .zoom-icon {
@@ -2093,7 +2132,9 @@ ol {
 	border-radius: 50%;
 	line-height: 37px;
 }
-
+.product-thumbs img {
+	border: 1px solid #e1e1e1;
+}
 .product-thumbs .pt {
 	cursor: pointer;
 	position: relative;
@@ -2343,14 +2384,11 @@ ol {
 	overflow: hidden;
 }
 
-.product-details .pd-share .p-code {
-	font-size: 16px;
-	color: #252525;
-	float: left;
-}
 
 .product-details .pd-share .pd-social {
-	float: right;
+	color: #252525;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .product-details .pd-share .pd-social a {
@@ -2657,8 +2695,8 @@ ol {
 
 .cart-table table tr th {
 	font-size: 16px;
-	color: #252525;
-	font-weight: 700;
+	color: #75b239;
+	font-weight: 800;
 	border-bottom: 1px solid #ebebeb;
 	text-align: center;
 	padding: 18px 0 19px;
@@ -2774,19 +2812,20 @@ ol {
 }
 
 .cart-buttons .up-cart {
-	color: #252525;
-	background: #f3f3f3;
-	border: 2px solid #ebebeb;
+	color: #f3f3f3;
+	background: #75b239;
+	border: 2px solid #75b239;
 	padding: 12px 20px 12px 20px;
 }
 
 .discount-coupon {
 	margin-bottom: 30px;
+
 }
 
 .discount-coupon h6 {
-	color: #232530;
-	font-weight: 700;
+	color: #75b239;
+	font-weight: 750;
 	text-transform: uppercase;
 	margin-bottom: 16px;
 }
@@ -2808,7 +2847,7 @@ ol {
 	position: absolute;
 	right: 0;
 	top: 0;
-	color: #252525;
+	color: #75b239;
 	background: transparent;
 	border: 1px solid transparent;
 	padding: 13px 25px 10px 35px;
@@ -2827,12 +2866,12 @@ ol {
 	list-style: none;
 	font-size: 16px;
 	font-weight: 700;
-	color: #252525;
 	text-transform: uppercase;
 	overflow: hidden;
 }
 
 .proceed-checkout ul li.subtotal {
+	color: #252525;
 	font-weight: 400;
 	text-transform: capitalize;
 	border-bottom: 1px solid #ffffff;
@@ -2845,9 +2884,6 @@ ol {
 
 .proceed-checkout ul li.cart-total {
 	padding-top: 10px;
-}
-
-.proceed-checkout ul li.cart-total span {
 	color: #75b239;
 }
 
@@ -2859,7 +2895,7 @@ ol {
 	font-size: 14px;
 	font-weight: 700;
 	color: #ffffff;
-	background: #252525;
+	background: #75b239;
 	text-transform: uppercase;
 	padding: 15px 25px 14px 25px;
 	display: block;
@@ -2881,21 +2917,26 @@ ol {
 
 .checkout-content .content-btn,
 .checkout-content input {
-	color: #252525;
+	color: #fff;
 	font-size: 16px;
 	border: 2px solid #ebebeb;
 	padding: 14px 20px;
-	background: #f3f3f3;
+	background: #75b239;
 	text-align: center;
 	display: block;
 }
 
 .checkout-content input {
 	height: 56px !important;
+	
+}
+.checkout-content input::placeholder {
+	color: #fff;
+	opacity: 0.8;
 }
 
 .checkout-form h4 {
-	color: #252525;
+	color: #75b239;
 	font-weight: 700;
 	margin-bottom: 30px;
 }
@@ -3064,8 +3105,8 @@ ol {
 
 .checkout-form .place-order .order-total .order-btn .place-btn {
 	padding: 13px 40px 11px;
-	background: #000000;
-	border-color: #000000;
+	background: #75b239;
+	border-color: #75b239;
 }
 
 /*---------------------
@@ -3814,7 +3855,7 @@ ol {
 
 .faq-accordin .card .card-heading {
 	font-size: 22px;
-	color: #252525;
+	color: #75b239;
 	font-weight: 700;
 	cursor: pointer;
 }
@@ -3839,7 +3880,7 @@ ol {
 	content: "";
 	font-family: "FontAwesome";
 	font-size: 14px;
-	color: #404040;
+	color: #75b239;
 	height: 25px;
 	width: 25px;
 	text-align: center;
@@ -3872,7 +3913,7 @@ ol {
 
 .register-form h2,
 .login-form h2 {
-	color: #252525;
+	color: #75b239;
 	font-weight: 700;
 	text-align: center;
 	margin-bottom: 35px;
@@ -3917,7 +3958,7 @@ ol {
 
 .register-form .switch-login .or-login,
 .login-form .switch-login .or-login {
-	color: #252525;
+	color: #75b239;
 	font-size: 14px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -3931,7 +3972,7 @@ ol {
 	bottom: 0;
 	height: 2px;
 	width: 100%;
-	background: #9f9f9f;
+	background: #75b239;
 	content: "";
 }
 
@@ -4279,6 +4320,7 @@ ol {
 	}
 	.cart-table table tr th {
 		font-size: 12px;
+
 	}
 	.hero-items .single-hero-items {
 		padding: 110px 25px 80px;
